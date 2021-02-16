@@ -7,5 +7,4 @@
 ### `npm start`
 
 
-### `Link to view app`
-https://contactcreater.netlify.app/
+### `Link to view app https://contactcreater.netlify.app/'
