@@ -206,19 +206,19 @@ function App() {
             <p>Username</p>
             <div style={{display: "flex", flexDirection:"row"}}>
             <input  type="text" className={errorusername? "errorinput":"creatinput"}  placeholder="Enter your name" value={username} onChange={(e) =>{const name = e.target.value.slice(0,1).toUpperCase(); setusername(name + e.target.value.slice(1)); seterrorusername(false);}}   />
-            {errorusername? <img src={error}    className="errorimg" />: null}
+            {errorusername? <img src={error}  alt="del"  className="errorimg" />: null}
             </div>
             {errorusername? <p className="error">This Field is  Required</p>: null}
             <p>Email</p>
             <div style={{display: "flex", flexDirection:"row"}}>
             <input type="text" className={erroremail? "errorinput":"creatinput"}  placeholder="Enter your email address" value={email} onChange={(e) => { setemail(e.target.value); seterroremail(false);}}  />
-            {erroremail? <img src={error}    className="errorimg" />: null}
+            {erroremail? <img src={error}  alt="del"  className="errorimg" />: null}
             </div>
             {erroremail? <p className="error">This Field is   Required</p>: null}
             <p>Company</p>
             <div style={{display: "flex", flexDirection:"row"}}>
             <input type="text" className={errorcompany? "errorinput":"creatinput"}  placeholder="Company" value={company} onChange={(e) => {const name = e.target.value.slice(0,1).toUpperCase();setcompany(name + e.target.value.slice(1)); seterrorcompany(false);}}  />
-            {errorcompany? <img src={error}    className="errorimg" />: null}
+            {errorcompany? <img src={error}  alt="del"  className="errorimg" />: null}
             </div>
             {errorcompany? <p className="error">This Field is   Required</p>: null}
           </div>
